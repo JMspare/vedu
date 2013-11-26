@@ -1,0 +1,157 @@
+/* 使用 google webfont */
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
+/* === 元素风格定义 === */
+
+* {
+    box-sizing: border-box;  /* 不打算兼容 IE */
+}
+
+body {
+    font-family: 'Waiting for the Sunrise', cursive;
+    background-color: #1abc9c;  /* turquoise */
+}
+
+abbr:hover {
+    /* 缩写标签 hover 的时候显示更好的锚 */
+    cursor: help;
+}
+
+ul {
+    /* 去除多余的 padding */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* === 页面各部分风格定义 === */
+
+/* === 主容器 === */
+#screen {
+    /*
+     * 计算公式：
+     *
+     * 个数 * box 总宽度 - 一个 box 的 margin
+     *
+     * 现在一行有 18 个，box 宽度为 50 + 10 px
+     * 所以总宽度为
+     *
+     *      18 * 60 - 10 = 1070 px
+     */
+    width: 1070px;
+    margin: auto;
+}
+
+/* === 页面标题 === */
+#title {
+    margin-top: 75px;
+}
+
+#title h1,
+#title h3 {
+    /* 标题居中显示 */
+    margin: auto;
+    text-align: center;
+
+    color: #fbfbfb;  /* clouds */
+}
+
+/* 主标题 */
+#title h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* 副标题 */
+#title h3 {
+
+}
+
+/* === 页面主体 === */
+#board {
+    margin: 30px 0;
+}
+
+/* === 页面脚部 === */
+#copyleft {
+    margin-top: 15px;
+
+    /* 居中显示 */
+    text-align: center;
+    color: #fbfbfb;
+    font-size: 25px;
+}
+
+#copyleft em {
+    font-style: normal;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* === 页面各模块风格定义 === */
+
+/* 一个标签 */
+.box {
+    /* 显示为一个漂浮的块级元素 */
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    float: left;
+    margin: 2px 10px 7px 0;
+    padding: 2px 5px;
+    width: 50px;
+    height: 80px;
+
+    font-family:Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    font-weight: 600px;
+    color: #fbfbfb;  /* clouds */
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+    background-color: #3498db;
+}
+
+/* 最后一个 box 不需要右边距 */
+.box:nth-child(18n) {
+    margin-right: 0;
+}
+
+.box abbr,
+.box a {
+    /* 使字体居中显示 */
+    margin: auto;
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+.box a {
+    /* 清除多余的样式 */
+    text-decoration: none;
+    color: #fbfbfb;  /* clouds */
+}
+
+.box:hover {
+    /* 被挑到的感觉真是很奇妙哦 ヾ(=^▽^=)ノ */
+    left: -2px;
+    top: -2px;
+}
+
+/* 边上的三角形 */
+.box .corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+
+    border: 5px solid transparent;
+    border-right: 5px solid #1abc9c;  /* turquoise */
+    border-top: 5px solid #1abc9c; /* turquoise */
+}
+
+/* 清除浮动 */
+.clearfix {
+    clear: both;
+}
