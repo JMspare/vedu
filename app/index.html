@@ -20,147 +20,18 @@
                 <h3>Enjoy learning with diligence and passion.</h3>
             </header>
             <section id="board">
-                <ul>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="python">python</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="laravel">laravel</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="php">php</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="html">
-                        <div class="corner"></div>
-                        <abbr title="html">html</abbr>
-                    </li>
-                    <li class="box" data-name="javascript">
-                        <div class="corner"></div>
-                        <abbr title="javascript">js</abbr>
-                    </li>
-                    <li class="box" data-name="">
+                <ul class="main">
+                    <!-- box 的模板 -->
+                    <script type="text/html" id="box-tmpl">
+                        <li class="box" data-name="<%= name %>" data-description="<%= description %>">
+                            <div class="corner"></div>
+                            <abbr title="<%= name %>"><%= abbr %></abbr>
+                        </li>
+                    </script>
+                    <li class="box">
                         <div class="corner"></div>
                         <!--TODO 更好看的符号-->
-                        <a href="#">+</a>
+                        <a class="add" href="#">+</a>
                     </li>
                 </ul>
                 <!--TODO 更好的清除浮动-->
