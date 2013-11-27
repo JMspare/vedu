@@ -228,6 +228,11 @@ ul {
     top: -2px;
 }
 
+.box.box-pesudo {
+    /* 不显示但占位置的 box */
+    background-color: transparent;
+}
+
 /* 边上的三角形 */
 .box .corner {
     position: absolute;

@@ -22,6 +22,18 @@
         return tmpl;
     };
 
+    // === 布局设定 ===
+    // 参照元素周期表的布局来设定
+    // 坐标从 1 开始，原点在左上角
+    // 每行可以指定哪些格是放置内容的
+    // 假如该行没有设定放置内容，默认为整行都使用
+    var layout = {
+        1: [1, 18],  // 指 1 和 18 可以放,
+        2: [1, 2, 13, 14, 15, 16, 17, 18],
+        3: [1, 2, 13, 14, 15, 16, 17, 18]
+    },
+        totalCols = 18;
+
     // === description 模块 ===
 
     var $description = $('#description'),  // box 详细信息模块
@@ -79,14 +91,35 @@
     // 获取 box 的内容
     $.get('/scripts/data.json').done(function(data) {
         var tmpl = $('#box-tmpl').text(),
+            pesudoTmpl = $('#pesudo-box-tmpl').text(),
             $board = $('#board .main'),
-            boxes = '';
+            boxes = '',
+            row = 1, col = 1;
 
         data.forEach(function(box) {
+            var currentRow = layout[row];
+
             box.abbr = box.abbr || box.name;  // abbr 默认为名字
             // 将 relations 变成 , 分隔的字符串
             box.relations = (box.relations || []).join(',');
+
+
+            // box 布局
+            // 如果该行有定义则按照定义来填充
+            if (currentRow) {
+                for (;$.inArray(col, currentRow) === -1;col++) {
+                    // 用空的 box 来填充
+                    boxes += template(pesudoTmpl, {});
+                }
+            }
             boxes += template(tmpl, box);
+            col += 1;
+
+            // 转移到下一行
+            if (col > totalCols) {
+                row += 1;
+                col %= totalCols;
+            }
         });
 
         $board.html(boxes + $board.html());
