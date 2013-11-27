@@ -2,7 +2,8 @@
   "name": "bentobox",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "FitText.js": "git@github.com:adactio/FitText.js.git"
   },
   "devDependencies": {}
 }

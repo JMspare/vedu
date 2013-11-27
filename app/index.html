@@ -23,16 +23,16 @@
                 <ul class="main">
                     <!-- box 的模板 -->
                     <script type="text/html" id="box-tmpl">
-                        <li class="box" data-name="<%= name %>" data-description="<%= description %>">
+                        <li class="box" data-name="<%= name %>" data-description="<%= description %>" data-relations="<%= relations %>">
                             <div class="corner"></div>
                             <abbr title="<%= name %>"><%= abbr %></abbr>
                         </li>
                     </script>
-                    <li class="box">
-                        <div class="corner"></div>
-                        <!--TODO 更好看的符号-->
-                        <a class="add" href="#">+</a>
-                    </li>
+                    <!--<li class="box">-->
+                        <!--<div class="corner"></div>-->
+                        <!--[>TODO 更好看的符号<]-->
+                        <!--<a class="add" href="#">+</a>-->
+                    <!--</li>-->
                 </ul>
                 <!--TODO 更好的清除浮动-->
                 <div class="clearfix"></div>
@@ -41,21 +41,28 @@
                 created with <em>&lt;3</em> by vtmer
             </footer>
         </div>
-        <section id="description" class="">
-            <header class="title">
-                <h1>Python</h1>
-            </header>
-            <article class="content">
-                <p>是一种面向对象、直譯式電腦程式語言，具有近二十年的發展歷史，成熟且穩定。它包含了一組完善而且容易理解的標準庫，能夠輕鬆完成很多常見的任務。它的語法简捷和清晰，尽量使用无异义的英语单词，與其它大多數程式設計語言使用大括号不一樣，它使用縮进來定義语句块。</p>
-            </article>
-            <aside>
-                <h3>相关 box</h3>
-                <ul class="related">
-                    <li class="friend"><a href="#">flask</a></li>
-                    <li class="friend"><a href="#">django</a></li>
-                    <li class="friend"><a href="#">tornado</a></li>
-                </ul>
-            </aside>
+        <section id="description">
+            <script type="text/html" id="description-tmpl">
+                <header class="title">
+                    <h1><%= name %></h1>
+                </header>
+                <article class="content">
+                    <p><%= description %></p>
+                </article>
+                <aside>
+                    <h3>相关 box</h3>
+                    <ul class="related">
+                        <%= relations %>
+                    </ul>
+                </aside>
+            </script>
+            <script id="related-tmpl" type="text/html">
+                <li class="friend">
+                    <a href="#" data-name="<%= name %>">
+                        <%= name %>
+                    </a>
+                </li>
+            </script>
         </section>
 
         <!-- build:js scripts/vendor.js -->

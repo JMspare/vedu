@@ -2,135 +2,28 @@
     {
         "name": "html",
         "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
+        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。",
+        "relations": ["javascript"]
     },
     {
         "name": "javascript",
         "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
+        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。",
+        "relations": ["html"]
     },
     {
         "name": "python",
-        "description": "Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种面向对象、直譯式電腦程式語言，具有近二十年的發展歷史，成熟且穩定。它包含了一組完善而且容易理解的標準庫，能夠輕鬆完成很多常見的任務。它的語法简捷和清晰，尽量使用无异义的英语单词，與其它大多數程式設計語言使用大括号不一樣，它使用縮进來定義语句块。"
+        "description": "Python（英國發音：/ˈpaɪθən/ 美國發音：/ˈpaɪθɑːn/），是一种面向对象、直譯式電腦程式語言，具有近二十年的發展歷史，成熟且穩定。它包含了一組完善而且容易理解的標準庫，能夠輕鬆完成很多常見的任務。它的語法简捷和清晰，尽量使用无异义的英语单词，與其它大多數程式設計語言使用大括号不一樣，它使用縮进來定義语句块。",
+        "relations": ["flask"]
     },
     {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
+        "name": "flask",
+        "description": "haha",
+        "relations": ["python"]
     },
     {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
-    },
-    {
-        "name": "html",
-        "abbr": "html",
-        "description": "超文本标记语言（英文：HyperText Markup Language，HTML）是为「网页创建和其它可在网页浏览器中看到的信息」设计的一种标记语言。HTML被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。1982年由蒂姆·伯纳斯-李创建，由IETF用简化的SGML（标准通用标记语言）语法进行进一步发展的HTML，后来成为国际标准，由万维网联盟（W3C）维护。"
-    },
-    {
-        "name": "javascript",
-        "abbr": "js",
-        "description": "JavaScript，一種直譯式程式語言，是一种动态类型、弱类型、基于原型的语言，内置支持類別。它的直譯器被稱為JavaScript引擎，為瀏覽器的一部份，廣泛用於客户端的腳本語言，最早是在HTML網頁上使用，用来给HTML網頁增加動態功能。然而现在JavaScript也可被用于网络服务器，如Node.js。"
+        "name": "ruby",
+        "description": "huh",
+        "relations": []
     }
 ]
