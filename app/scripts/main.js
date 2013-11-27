@@ -168,7 +168,8 @@
             $description.trigger('show', boxInfo);
         });
 
-        $('.box').click(function(e) {
+        // 绑定 box 点击事件
+        $('.box').not('.box-pesudo').click(function(e) {
             e.preventDefault();
             $(e.currentTarget).trigger('selected');
         });
