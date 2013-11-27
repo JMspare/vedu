@@ -72,6 +72,95 @@ ul {
     margin: 30px 0;
 }
 
+/* === box 简介 === */
+#description {
+    /* 定位到右边 */
+    position: fixed;
+    top: 0;
+    /* 默认不显示 */
+    right: -50%;
+    /* 占一半 */
+    width: 50%;
+    height: 100%;
+    padding-left: 15px;
+
+    font-family:Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    background-color: rgba(44, 62, 80, .65);  /* midnight blue */
+    color: #fbfbfb;  /* clouds */
+}
+
+/* 实际上当作一个模块 */
+#description .title {
+    margin: 25px 0 5px 0;
+}
+
+#description .content,
+#description .related {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#description .content {
+    margin-bottom: 15px;
+}
+
+#description .related .friend {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#description .related a {
+    text-decoration: none;
+    color: #fbfbfb;  /* clouds */
+}
+
+#description .related a:hover {
+    color: #95a5a6;  /* concrete */
+}
+
+/* 过渡动画 */
+#description.show,
+#description.hide {
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+#description.show {
+    right: 0;
+
+    animation-name: slidein;
+}
+
+#description.hide {
+    right: -50%;
+
+    animation-name: slideout;
+}
+
+@keyframes slidein {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slideout {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -50%;
+    }
+}
+
+
 /* === 页面脚部 === */
 #copyleft {
     margin-top: 15px;
@@ -121,7 +210,7 @@ ul {
 .box a {
     /* 使字体居中显示 */
     margin: auto;
-    
+
     text-align: center;
     font-weight: bold;
 }
@@ -132,7 +221,8 @@ ul {
     color: #fbfbfb;  /* clouds */
 }
 
-.box:hover {
+.box:hover,
+.box.box-selected {
     /* 被挑到的感觉真是很奇妙哦 ヾ(=^▽^=)ノ */
     left: -2px;
     top: -2px;

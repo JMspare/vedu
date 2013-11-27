@@ -4,6 +4,15 @@
     /* 声明模式 */
     'use strict';
 
+    var $description = $('#description');
+
+    $description.click(function(e) {
+        e.preventDefault(); // link click huh?
+
+        $description.removeClass('show')
+                    .addClass('hide');
+    });
+
     /**
      * 填充模板内容
      *
@@ -38,6 +47,13 @@
         /* 使用 FitText 调整每个 box 里面的字体大小 */
         $('.box').each(function(i, e) {
             window.fitText(e);
+        });
+
+        $('.box').click(function(e) {
+            e.preventDefault();
+
+            $description.removeClass('hide')
+                        .addClass('show');
         });
     }).fail(function() {
         console.log('Don\'t panic!');
