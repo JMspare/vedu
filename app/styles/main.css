@@ -1,5 +1,5 @@
 /* 使用 google webfont */
-@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
 /* === 元素风格定义 === */
 
@@ -8,8 +8,8 @@
 }
 
 body {
-    font-family: 'Waiting for the Sunrise', cursive;
-    background-color: #1abc9c;  /* turquoise */
+    font-family:Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    background-color: #fff;  /* white */
 }
 
 abbr:hover {
@@ -52,14 +52,14 @@ ul {
     /* 标题居中显示 */
     margin: auto;
     text-align: center;
-
-    color: #fbfbfb;  /* clouds */
+    font-weight: normal;
+    font-family: 'Poiret One', cursive;
+    color: #2c3e50;  /* midnight blue */
 }
 
 /* 主标题 */
 #title h1 {
     font-size: 45px;
-    font-weight: bold;
 }
 
 /* 副标题 */
@@ -85,7 +85,7 @@ ul {
     padding-left: 15px;
 
     font-family:Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-    background-color: rgba(44, 62, 80, .65);  /* midnight blue */
+    background-color: rgba(44, 62, 80, .35);  /* midnight blue */
     color: #fbfbfb;  /* clouds */
 }
 
@@ -167,14 +167,13 @@ ul {
 
     /* 居中显示 */
     text-align: center;
-    color: #fbfbfb;
-    font-size: 25px;
+    font-size: 20px;
+    color: #2c3e50;  /* midnight blue */
+    font-family: 'Poiret One', cursive;
 }
 
 #copyleft em {
     font-style: normal;
-    font-size: 1.25em;
-    font-weight: bold;
 }
 
 /* === 页面各模块风格定义 === */
@@ -189,16 +188,17 @@ ul {
     margin: 2px 10px 7px 0;
     padding: 2px 5px;
     width: 50px;
-    height: 80px;
+    height: 70px;
 
-    font-family:Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-    font-weight: 600px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: #fbfbfb;  /* clouds */
     word-wrap: break-word;
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
             hyphens: auto;
-    background-color: #3498db;
+    background-color: #3498db;  /* peter river */
 }
 
 /* 最后一个 box 不需要右边距 */
@@ -242,8 +242,8 @@ ul {
     height: 0;
 
     border: 5px solid transparent;
-    border-right: 5px solid #1abc9c;  /* turquoise */
-    border-top: 5px solid #1abc9c; /* turquoise */
+    border-right: 5px solid #fff;  /* white */
+    border-top: 5px solid #fff; /* white */
 }
 
 /* 清除浮动 */
