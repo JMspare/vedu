@@ -67,6 +67,15 @@
             $description.trigger('hide');
         });
 
+        // 绑定相关 box 下的链接点击事件
+        $('.related a', $description).click(function(e) {
+            var name = $(e.currentTarget).attr('data-name'),
+                box = $('.box[data-name=' + name + ']');
+
+            box.trigger('selected');
+            e.preventDefault();
+        });
+
         // 更改元素状态
         $description.removeClass('hide');
         if (!$description.hasClass('show')) {
@@ -134,9 +143,10 @@
             $(this).addClass('box-selected');
         });
 
-        $('.box').click(function(e) {
+        // 绑定 box 选择事件
+        $('.box').on('selected', function() {
             // mutation is bad :/
-            var boxInfo = $.extend({}, $(e.currentTarget).data());
+            var boxInfo = $.extend({}, $(this).data());
 
             // 清除之前的状态
             // TODO 使用组合的方法来完成清除的操作
@@ -156,9 +166,13 @@
 
             // 触发 description 模块的 show 事件
             $description.trigger('show', boxInfo);
-
-            e.preventDefault();
         });
+
+        $('.box').click(function(e) {
+            e.preventDefault();
+            $(e.currentTarget).trigger('selected');
+        });
+
     }).fail(function() {
         console.log('Don\'t panic!');
     });
